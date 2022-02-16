@@ -1,0 +1,83 @@
+<header id="header" class="header">
+
+  <div class="header__navigation">
+    <div class="header__navigation-container _container">
+      <a href="index.html" class="logo-icon header__logo">
+        <!-- <? bloginfo("url"); ?> -->
+      </a>
+
+      <p class="header__address">г. Курск, ул.1-я Пушкарная, д. 28</p>
+
+      <a href="mailto:ros-trud@mail.ru" class="header__mail">ros-trud@mail.ru</a> 
+
+      <div class="header__soc-block">
+        <div class="header__soc-block-icon soc-block-icon">
+          <a href="#" class="soc-block-icon__link soc-block-icon__link_1"></a>
+          <a href="#" class="soc-block-icon__link soc-block-icon__link_2"></a>
+          <a href="#" class="soc-block-icon__link soc-block-icon__link_3"></a>
+          <a href="#" class="soc-block-icon__link soc-block-icon__link_4"></a>
+        </div>
+        <p class="header__soc-block-text">МЫ В СОЦСЕТЯХ</p>
+      </div>
+
+      <div class="header__contacts d-flex">
+        <a href="tel:+74712550286" class="header__phone">+7 (4712) 55-02-86</a>
+        <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
+        <a href="#callback" class="header__callback btn _popup-link">ЗАКАЗКАТЬ ЗВОНОК</a>
+      </div>
+      <a href="tel:+74712550286" class="mob-phone-icon header__mob-phone-icon"></a>
+      <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a> -->
+
+      <div class="icon-menu" aria-label="Бургер меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__menu">
+    <div class="header__menu-container _container">
+      <ul class="menu-list header__menu-list d-flex">
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Главная</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">О нас</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Акции</a></li>
+        <li class="menu-list__item"><a href="security.html" class="menu-list__link">Аккредитации и лицензии</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Наши клиенты и партнеры</a></li>
+        <li class="menu-list__item"><a href="services.html" class="menu-list__link">Услуги</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Отзывы</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
+      </ul>
+      <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
+        'container_class' => 'menu__list','container' => false )); ?>  -->
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Мобильное меню -->
+  <div class="mob-menu header__mob-menu">
+    <ul class="mob-menu__list">
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Главная</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">О нас</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Акции</a></li>
+      <li class="mob-menu__item"><a href="security.html" class="mob-menu__link">Аккредитации и лицензии</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Наши клиенты и партнеры</a></li>
+      <li class="mob-menu__item"><a href="services.html" class="mob-menu__link">Услуги</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Отзывы</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакты</a></li>
+    </ul>
+
+    <div class="header__soc-block header__soc-block_mob">
+      <div class="header__soc-block-icon soc-block-icon">
+        <a href="#" class="soc-block-icon__link soc-block-icon__link_1"></a>
+        <a href="#" class="soc-block-icon__link soc-block-icon__link_2"></a>
+        <a href="#" class="soc-block-icon__link soc-block-icon__link_3"></a>
+        <a href="#" class="soc-block-icon__link soc-block-icon__link_4"></a>
+      </div>
+      <p class="header__soc-block-text">МЫ В СОЦСЕТЯХ</p>
+    </div>
+  <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
+    'container_class' => 'mob-menu__list','container' => false )); ?>  -->
+    <a href="#callback" class="header__popup-link header__popup-link_mob btn _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
+  </div>
