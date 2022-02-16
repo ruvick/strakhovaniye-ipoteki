@@ -64,10 +64,10 @@ function sliders_bild_callback(params) { }
 // Сюда пишем класс нашего слайдера и меняем переменную
 let sliderBg = new Swiper('.slider-bg', {
   // effect: 'fade',
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
 
   observer: true,
   observeParents: true,
@@ -153,7 +153,7 @@ let licenses_sl = new Swiper('.licenses-sl', {
     nextEl: '.licenses-sl-next',
     prevEl: '.licenses-sl-prev',
   },
-  
+
   breakpoints: {
     360: {
       slidesPerView: 2.5,
@@ -178,7 +178,7 @@ let licenses_sl = new Swiper('.licenses-sl', {
       spaceBetween: 23,
     },
   },
-  
+
   on: {
     lazyImageReady: function () {
       ibg();
@@ -221,7 +221,7 @@ let reviews_sl = new Swiper('.reviews-sl', {
     nextEl: '.reviews-sl-next',
     prevEl: '.reviews-sl-prev',
   },
-  
+
   breakpoints: {
     360: {
       slidesPerView: 2.5,
@@ -246,7 +246,7 @@ let reviews_sl = new Swiper('.reviews-sl', {
       spaceBetween: 23,
     },
   },
-  
+
   on: {
     lazyImageReady: function () {
       ibg();
@@ -289,7 +289,7 @@ let clients_sl = new Swiper('.clients-sl', {
     nextEl: '.clients-sl-next',
     prevEl: '.clients-sl-prev',
   },
-  
+
   breakpoints: {
     360: {
       slidesPerView: 1.8,
@@ -312,7 +312,7 @@ let clients_sl = new Swiper('.clients-sl', {
       spaceBetween: 30,
     },
   },
-  
+
   on: {
     lazyImageReady: function () {
       ibg();
