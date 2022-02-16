@@ -16,6 +16,7 @@
 
 						<div class="slider-bg__slide slider__slide slider-main__slide-1">
 							<div class="nuar_blk"></div>
+							<div class="blur"></div>
 							<div class="slider-bg__container _container">
 								<h1 class="slider-bg__title">
 									Страхование ипотеки
@@ -43,12 +44,12 @@
 						</div>
 
 					</div>
-					<div class="slider-bg__swiper-button-block swiper-button-block">
+					<!-- <div class="slider-bg__swiper-button-block swiper-button-block">
 						<div class="_container">
 							<div class="swiper-button swiper-button-next slider-main-next"></div>
 							<div class="swiper-button swiper-button-prev slider-main-prev"></div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
 			</section>
@@ -116,72 +117,79 @@
 				</div>
 			</section>
 
-			<section id="news" class="news">
+			<section id="applic" class="applic">
 				<div class="_container">
-					<h2 class="news__title title">Новости</h2>
 
-					<div class="news__wrap">
+					<div class="applic__row d-flex">
 
-						<div class="news__column">
-							<div class="card-news">
-								<div class="card-news__img">
-									<img src="img/news/01.jpg" alt="">
+						<div class="applic__block">
+							<h2 class="applic__block-title">Оставьте заявку на расчет ипотечного страхования</h2>
+							<form action="#" class="applic__block-form">
+								<div class="form__line">
+									<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
+										data-value="ФИО*" class="input _req">
+
+									<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
+										data-value="Телефон*" class="input _phone _req">
+
+									<input id="tel" autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
+										data-value="Сумма*" class="input _digital _req">
 								</div>
-								<div class="card-news__descp">
-									<p class="card-news__descp-date">24.11.2021</p>
-									<h4 class="card-news__descp-title">
-										Система сохранения жизни и
-										здоровья работников в процессе
-										трудовой деятельности
-									</h4>
-									<p class="card-news__descp-subtitle">
-										Охрана труда по своей сути представляет набор
-										обязательных для исполнения работодателями
-										мероприятий, таких как обучение по охране...
-									</p>
-								</div>
-							</div>
+								<button type="submit" class="applic__block-form-btn form__btn btn">Оставить заявку</button>
+							</form>
 						</div>
-						<div class="news__column">
-							<div class="card-news">
-								<div class="card-news__img">
-									<img src="img/news/02.jpg" alt="">
-								</div>
-								<div class="card-news__descp">
-									<p class="card-news__descp-date">24.11.2021</p>
-									<h4 class="card-news__descp-title">
-										Профилактическая медицина,
-										изучающая условия и характер труда
-									</h4>
-									<p class="card-news__descp-subtitle">
-										Занимается вопросами обеспечения безопасности
-										производственного процесса, продукции, сырья и
-										поэтому не может служить интересам сохране...
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="news__column">
-							<div class="card-news">
-								<div class="card-news__img">
-									<img src="img/news/03.jpg" alt="">
-								</div>
-								<div class="card-news__descp">
-									<p class="card-news__descp-date">24.11.2021</p>
-									<h4 class="card-news__descp-title">
-										Работник имеет права и гарантии
-										права на безопасные и здоровые
-										условия труда
-									</h4>
-									<p class="card-news__descp-subtitle">
-										Федеральная инспекция труда контролирует
-										выполнение законодательства, всех норм и
-										правил по охране труда. Государственный сани...
-									</p>
-								</div>
+
+						<div class="applic__block">
+							<div class="applic__block-img">
+								<img src="img/news/01.jpg" alt="">
 							</div>
 						</div>
 
+					</div>
+
+				</div>
+			</section>
+
+			<section id="purchase" class="purchase">
+				<div class="_container">
+
+					<h2 class="security__title title">Как приобрести страхование квартиры по ипотеке онлайн в нашем сервисе:</h2>
+					<div class="security__descp">
+						<ul class="security__descp-list">
+							<li class="security__descp-list-item security__descp-list-item_dots">
+								Выберите банк, укажите пол и дату рождения.
+							</li>
+							<li class="security__descp-list-item security__descp-list-item_dots">
+								Укажите остаток по кредиту. Если вам осталось выплатить меньше 100 000 рублей – укажите 100 000 рублей,
+								иначе банк может не принять полис.
+							</li>
+							<li class="security__descp-list-item security__descp-list-item_dots">
+								Нажмите на «Показать цены».
+							</li>
+							<li class="security__descp-list-item security__descp-list-item_dots">
+								Сервис покажет вам цены на страховки от разных СК. Выберите тип страховки и укажите дополнительные
+								сведения.
+							</li>
+							<li class="security__descp-list-item security__descp-list-item_dots">
+								Понравилось предложение – нажмите на «Подробнее о полисе», увидите правила страхования, риски и примет
+								ли Ваш банк этот полис.
+							</li>
+						</ul>
+						<ul class="security__descp-list">
+							<li class="security__descp-list-item security__descp-list-item_dots">
+								Выбрали – жмите «Купить полис»
+							</li>
+							<li class="security__descp-list-item security__descp-list-item_dots">
+								Нужно будет указать данные о заемщике и об ипотеке. Кроме того, понадобится контактная информация –
+								почта и телефон.
+							</li>
+							<li class="security__descp-list-item security__descp-list-item_dots">
+								После того как указали – переходите к оплате. Оплата происходит картой.
+							</li>
+							<li class="security__descp-list-item security__descp-list-item_dots">
+								Через 5 минут после оплаты полис будет на указанной почте. Можете распечатать или переслать менеджеру.
+							</li>
+						</ul>
 					</div>
 
 				</div>

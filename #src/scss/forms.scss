@@ -24,15 +24,15 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 10px 13px;
+	padding: 13px 20px;
 	// min-width: 144px;
 	// min-height: 36px;
-	font-size: 11px;
+	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #fff;
-	background: #fea621;
-	border-radius: 15px;
+	background: #23A455;
+	border-radius: 13px;
 	&:hover{}
 	&.fw{width: 100%;}  
 }
@@ -190,10 +190,12 @@ textarea {
 .input {
 	display: flex;
 	width: 100%;
-	height: 30px;
+	height: 46px;
 	padding: 0px 15px;
+	color: #838383;
+	background: #F6F8F1;
 	border-radius: 5px;
-	border: 1px solid #000;
+	border: 1px solid #737373;
 	&._focus {
 		background: #8584847a;
 	}
