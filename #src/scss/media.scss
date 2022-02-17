@@ -271,6 +271,9 @@
   .footer__link {
     margin-top: 10px;
   }
+  .slider-bg__slide {
+    background-position: 80% 0% !important;
+  }
 }
 
 @media (max-width: 700px) {
@@ -388,6 +391,9 @@
   }
   .footer__link {
     width: 100%;
+  }
+  .slider-bg__slide {
+    background-position: 85% 0% !important;
   }
 }
 
