@@ -312,6 +312,9 @@ h4 {
 .applic__block-form input:last-child {
 	margin-bottom: 0;
 }
+.applic__block-footnote {
+
+}
 .applic__block-form-btn {
 	margin-top: 20px;
 }
@@ -325,7 +328,21 @@ h4 {
 //========================================================================================================================================================
 
 .purchase {
-	padding: 35px 0;
+	padding: 65px 0;
+}
+.purchase__btn {
+	justify-content: center;
+}
+.purchase__btn-link {
+	margin-right: 15px;
+}
+.purchase__btn-link:last-child {
+	margin-right: 0;
+}
+.purchase__btn-link_white {
+	color: #23A455;
+	background: #fff;
+	border: 1px solid #23A455;
 }
 //========================================================================================================================================================
 
@@ -565,6 +582,9 @@ h4 {
 		padding-bottom: 15px;
 		margin-bottom: 20px;
 		border-bottom: 1px dotted #000;
+		&:last-child{
+			border-bottom: none;
+		}
 		&:before {
 			content:'';
 			float: left;

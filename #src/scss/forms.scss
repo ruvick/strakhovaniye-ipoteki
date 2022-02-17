@@ -194,11 +194,11 @@ textarea {
 	height: 46px;
 	padding: 0px 15px;
 	color: #838383;
-	background: #F6F8F1;
+	// background: #F6F8F1;
 	border-radius: 5px;
 	border: 1px solid #737373;
 	&._focus {
-		background: #8584847a;
+		background: #F6F8F1;
 	}
 	&._error {
 		border: 1px solid red;
