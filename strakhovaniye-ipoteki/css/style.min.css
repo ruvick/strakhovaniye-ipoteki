@@ -3841,6 +3841,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .header__mail {
     display: none;
   }
+
+  .purchase__box:after {
+    left: 76%;
+    width: 80%;
+  }
 }
 @media (max-width: 830px) {
   .header__contacts {
@@ -4160,6 +4165,33 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin-top: 5px;
     margin-bottom: 10px;
   }
+
+  .purchase__row {
+    width: auto;
+    overflow: auto;
+  }
+
+  .purchase__box {
+    flex: 0 0 25%;
+  }
+
+  .purchase__box:after {
+    display: none;
+  }
+
+  .purchase__box-descp-text {
+    font-size: 14px;
+  }
+
+  .purchase__box-circle {
+    flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .purchase__box-circle-item {
+    font-size: 26px;
+  }
 }
 @media (max-width: 700px) {
   .mob-menu {
@@ -4192,6 +4224,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .tariff-plans__column {
     flex: 0 0 36%;
+  }
+
+  .purchase__box {
+    flex: 0 0 30%;
   }
 }
 @media (max-width: 612px) {
@@ -4372,6 +4408,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .slider-bg__slide {
     background-position: 85% 0% !important;
   }
+
+  .purchase__box {
+    flex: 0 0 35%;
+  }
 }
 @media (max-width: 480px) {
   .slider-bg__slide {
@@ -4414,6 +4454,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .page-recurring {
     padding: 60px 0 30px 0 !important;
+  }
+
+  .purchase__box {
+    flex: 0 0 43%;
   }
 }
 @media (max-width: 440px) {
@@ -4471,6 +4515,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .applic__block-form-btn {
     width: 100%;
   }
+
+  .purchase__box {
+    flex: 0 0 48%;
+  }
 }
 @media (max-width: 375px) {
   .about__column-icon-list-item {
@@ -4505,5 +4553,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .services__column {
     flex: 0 0 96%;
+  }
+
+  .purchase__box {
+    flex: 0 0 53%;
   }
 }
