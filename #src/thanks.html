@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('_head.html',{
-"title":"Ипотечное страхование - выгодно и быстро"
+"title":"Страница Благодарности"
 })
 
 <body>
@@ -121,56 +121,37 @@
 			<section id="applic" class="applic">
 				<div class="_container">
 
-					<h2 class="applic__title">Оставьте заявку на расчет ипотечного страхования</h2>
+					<div class="applic__row d-flex">
 
-					<form action="#" class="applic__form">
+						<div class="applic__block">
+							<h2 class="applic__block-title">Оставьте заявку на расчет ипотечного страхования</h2>
+							<form action="#" class="applic__block-form">
+								<div class="form__line">
+									<label for="name" class="form__label">ФИО*</label>
+									<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
+										data-value="" class="input _req">
 
-						<div class="applic__form-inner">
-							<div class="applic__form-line form__line">
-								<h2 class="applic__form-inner-title">Данные заемщика</h2>
-								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-value="ФИО"
-									class="input _req">
-								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
-									data-value="Дата рождения" class="input _digital _req">
-								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-value="Пол"
-									class="input _req">
-								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
-									data-value="Паспортные данные" class="input _digital _req">
-								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
-									data-value="Адрес по прописке" class="input _digital _req">
-							</div>
+									<label for="tel" class="form__label">Телефон*</label>
+									<input id="tel" autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-value=""
+										class="input _phone _req">
 
-							<div class="applic__form-inner-line-vertical"></div>
+									<label for="sum" class="form__label">Сумма*</label>
+									<input id="sum" autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-value=""
+										class="input _digital _req">
+									<p class="applic__block-footnote">* Отправляя заявку, вы соглашаетесь на обработку персональных данных
+									</p>
+								</div>
+								<button type="submit" class="applic__block-form-btn form__btn btn">Оставить заявку</button>
+							</form>
+						</div>
 
-							<div class="applic__form-line form__line">
-								<h2 class="applic__form-inner-title">Данные по ипотеке</h2>
-								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
-									data-value="Дата начала страхования" class="input _digital _req">
-								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-value="Банк"
-									class="input _req">
-								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
-									data-value="Адрес обьекта страхования" class="input _req">
-								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
-									data-value="Тип обьекта, год постройки, площадь" class="input _req">
-								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
-									data-value="Номер кредитного договора" class="input _digital _req">
+						<div class="applic__block">
+							<div class="applic__block-img">
+								<img src="img/applic.jpg" alt="">
 							</div>
 						</div>
 
-						<div class="applic__form-contacts">
-							<h2 class="applic__form-contacts-title">Контактные данные</h2>
-							<div class="applic__form-contacts-line form__line">
-								<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
-									data-value="Телефон" class="input _phone _req">
-								<input id="tel" autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
-									data-value="Email" class="input _email _req">
-							</div>
-						</div>
-
-						<p class="applic__block-footnote">* Отправляя заявку, вы соглашаетесь на обработку персональных данных</p>
-
-						<button type="submit" class="applic__block-form-btn form__btn btn">Оставить заявку</button>
-					</form>
+					</div>
 
 				</div>
 			</section>
