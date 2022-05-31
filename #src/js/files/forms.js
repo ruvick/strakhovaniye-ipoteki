@@ -549,12 +549,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			let startDate = (form.querySelectorAll("input[name=start-date]").length == 0) ? "" : form.querySelectorAll("input[name=start-date]")[0].value;
 			let endDate = (form.querySelectorAll("input[name=end-date]").length == 0) ? "" : form.querySelectorAll("input[name=end-date]")[0].value;
 			let bank = (form.querySelectorAll("input[name=bank]").length == 0) ? "" : form.querySelectorAll("input[name=bank]")[0].value;
-			let balanceOwed = (form.querySelectorAll("input[balance-owed]").length == 0) ? "" : form.querySelectorAll("input[balance-owed]")[0].value;
-			let interestRate = (form.querySelectorAll("input[interest-rate]").length == 0) ? "" : form.querySelectorAll("input[interest-rate]")[0].value;
-			let objectAddress = (form.querySelectorAll("input[object-address]").length == 0) ? "" : form.querySelectorAll("input[object-address]")[0].value;
+			let balanceOwed = (form.querySelectorAll("input[name=balance-owed]").length == 0) ? "" : form.querySelectorAll("input[name=balance-owed]")[0].value;
+			let interestRate = (form.querySelectorAll("input[name=interest-rate]").length == 0) ? "" : form.querySelectorAll("input[name=interest-rate]")[0].value;
+			let objectAddress = (form.querySelectorAll("input[name=object-address]").length == 0) ? "" : form.querySelectorAll("input[name=object-address]")[0].value;
 			let objectCharacteristics = (form.querySelectorAll("input[object-characteristics]").length == 0) ? "" : form.querySelectorAll("input[object-characteristics]")[0].value;
-			let agreementNumber = (form.querySelectorAll("input[agreement-number]").length == 0) ? "" : form.querySelectorAll("input[agreement-number]")[0].value;
-			let startDateAgreement = (form.querySelectorAll("input[start-date-agreement]").length == 0) ? "" : form.querySelectorAll("input[start-date-agreement]")[0].value;
+			let agreementNumber = (form.querySelectorAll("input[name=agreement-number]").length == 0) ? "" : form.querySelectorAll("input[name=agreement-number]")[0].value;
+			let startDateAgreement = (form.querySelectorAll("input[name=start-date-agreement]").length == 0) ? "" : form.querySelectorAll("input[name=start-date-agreement]")[0].value;
 			let tel = (form.querySelectorAll("input[name=phone]").length == 0) ? "" : form.querySelectorAll("input[name=phone]")[0].value;
 			if (tel == "Телефон*") { form.querySelectorAll("input[name=phone]")[0].classList.add("_error"); return }
 			let mail = (form.querySelectorAll("input[name=mail]").length == 0) ? "" : form.querySelectorAll("input[name=mail]")[0].value;
