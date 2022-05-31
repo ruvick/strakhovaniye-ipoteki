@@ -531,110 +531,76 @@ if (priceSlider) {
 }
 // ============================================================================================================
 
-// Отправка файла плагином PHPMailer ==========================================================================
-// document.addEventListener('DOMContentLoaded', function () {
-// 	const form = document.getElementById('form');
-// 	form.addEventListener('submit', formSend);
+// Отправка файла плагином PHPMailer 
+document.addEventListener('DOMContentLoaded', function () {
+	let send_btns = document.querySelectorAll("._send_btn")
+	send_btns.forEach(element => {
+		element.onclick = (e) => {
+			e.preventDefault()
+			let formid = element.dataset.formid;
+			let msg = element.dataset.msg;
+			let form = document.getElementById(formid);
 
-// 	async function formSend(e) {
-// 		e.preventDefault();
+			let name = (form.querySelectorAll("input[name=name]").length == 0) ? "" : form.querySelectorAll("input[name=name]")[0].value;
+			let dateBirth = (form.querySelectorAll("input[name=date-birth]").length == 0) ? "" : form.querySelectorAll("input[name=date-birth]")[0].value;
+			let gender = (form.querySelectorAll("input[name=gender]").length == 0) ? "" : form.querySelectorAll("input[name=gender]")[0].value;
+			let passport = (form.querySelectorAll("input[name=passport]").length == 0) ? "" : form.querySelectorAll("input[name=passport]")[0].value;
+			let registeredAddress = (form.querySelectorAll("input[name=registered-address]").length == 0) ? "" : form.querySelectorAll("input[name=registered-address]")[0].value;
+			let startDate = (form.querySelectorAll("input[name=start-date]").length == 0) ? "" : form.querySelectorAll("input[name=start-date]")[0].value;
+			let endDate = (form.querySelectorAll("input[name=end-date]").length == 0) ? "" : form.querySelectorAll("input[name=end-date]")[0].value;
+			let bank = (form.querySelectorAll("input[name=bank]").length == 0) ? "" : form.querySelectorAll("input[name=bank]")[0].value;
+			let balanceOwed = (form.querySelectorAll("input[balance-owed]").length == 0) ? "" : form.querySelectorAll("input[balance-owed]")[0].value;
+			let interestRate = (form.querySelectorAll("input[interest-rate]").length == 0) ? "" : form.querySelectorAll("input[interest-rate]")[0].value;
+			let objectAddress = (form.querySelectorAll("input[object-address]").length == 0) ? "" : form.querySelectorAll("input[object-address]")[0].value;
+			let objectCharacteristics = (form.querySelectorAll("input[object-characteristics]").length == 0) ? "" : form.querySelectorAll("input[object-characteristics]")[0].value;
+			let agreementNumber = (form.querySelectorAll("input[agreement-number]").length == 0) ? "" : form.querySelectorAll("input[agreement-number]")[0].value;
+			let startDateAgreement = (form.querySelectorAll("input[start-date-agreement]").length == 0) ? "" : form.querySelectorAll("input[start-date-agreement]")[0].value;
+			let tel = (form.querySelectorAll("input[name=phone]").length == 0) ? "" : form.querySelectorAll("input[name=phone]")[0].value;
+			if (tel == "Телефон*") { form.querySelectorAll("input[name=phone]")[0].classList.add("_error"); return }
+			let mail = (form.querySelectorAll("input[name=mail]").length == 0) ? "" : form.querySelectorAll("input[name=mail]")[0].value;
 
-// 		let error = formValidate(form);
+			var params = new URLSearchParams()
 
-// 		let formData = new FormData(form);
-// 		formData.append('image', formImage.files[0]);
+			params.append('name', name)
+			params.append('date-birth', dateBirth)
+			params.append('gender', gender)
+			params.append('passport', passport)
+			params.append('registered-address', registeredAddress)
+			params.append('start-date', startDate)
+			params.append('end-date', endDate)
+			params.append('bank', bank)
+			params.append('balance-owed', balanceOwed)
+			params.append('interest-rate', interestRate)
+			params.append('object-address', objectAddress)
+			params.append('object-characteristics', objectCharacteristics)
+			params.append('agreement-number', agreementNumber)
+			params.append('start-date-agreement', startDateAgreement)
+			params.append('tel', tel)
+			params.append('mail', mail)
+			params.append('msg', msg)
 
-// 		if (error === 0) {
-// 			form.classList.add('_sending');
-// 			let response = await fetch('sendmail.php', {
-// 				method: 'POST',
-// 				body: formData
-// 			});
-// 			if (response.ok) {
-// 				let result = await response.json();
-// 				alert(result.message);
-// 				formPreview.innerHTML = '';
-// 				form.reset();
-// 				form.classList.remove('_sending');
-// 			} else {
-// 				alert("Ошибка");
-// 				form.classList.remove('_sending');
-// 			}
-// 		} else {
-// 			alert('Заполните обязательные поля');
-// 		}
+			var xhr = new XMLHttpRequest();
 
-// 	}
+			xhr.onload = function (e) {
 
+				if (xhr.status == 200) {
 
-// 	function formValidate(form) {
-// 		let error = 0;
-// 		let formReq = document.querySelectorAll('._req');
+					location.href = "/thanks.html"
 
-// 		for (let index = 0; index < formReq.length; index++) {
-// 			const input = formReq[index];
-// 			formRemoveError(input);
+				} else {
+					console.log(xhr.status)
+					console.log(xhr.statusText)
+					alert("При отправке произошла ошибка")
+				}
 
-// 			if (input.classList.contains('_email')) {
-// 				if (emailTest(input)) {
-// 					formAddError(input);
-// 					error++;
-// 				}
-// 			} else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
-// 				formAddError(input);
-// 				error++;
-// 			} else {
-// 				if (input.value === '') {
-// 					formAddError(input);
-// 					error++;
-// 				}
-// 			}
-// 		}
-// 		return error;
-// 	}
-// 	function formAddError(input) {
-// 		input.parentElement.classList.add('_error');
-// 		input.classList.add('_error');
-// 	}
-// 	function formRemoveError(input) {
-// 		input.parentElement.classList.remove('_error');
-// 		input.classList.remove('_error');
-// 	}
-// 	//Функция теста email
-// 	function emailTest(input) {
-// 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-// 	}
+			}
 
-// 	//Получаем инпут file в переменную
-// 	const formImage = document.getElementById('formImage');
-// 	//Получаем див для превью в переменную
-// 	const formPreview = document.getElementById('formPreview');
+			xhr.onerror = function (msg) {
+				console.log("eroroa" + xhr.statusText)
+			}
 
-// 	//Слушаем изменения в инпуте file
-// 	formImage.addEventListener('change', () => {
-// 		uploadFile(formImage.files[0]);
-// 	});
-
-// 	function uploadFile(file) {
-// 		// провераяем тип файла
-// 		if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
-// 			alert('Разрешены только изображения.');
-// 			formImage.value = '';
-// 			return;
-// 		}
-// 		// проверим размер файла (<2 Мб)
-// 		if (file.size > 2 * 1024 * 1024) {
-// 			alert('Файл должен быть менее 2 МБ.');
-// 			return;
-// 		}
-
-// 		var reader = new FileReader();
-// 		reader.onload = function (e) {
-// 			formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
-// 		};
-// 		reader.onerror = function (e) {
-// 			alert('Ошибка');
-// 		};
-// 		reader.readAsDataURL(file);
-// 	}
-// });
+			xhr.open('POST', "http://ipoteka-strah.ru/sender.php", true);
+			xhr.send(params);
+		}
+	})
+})
