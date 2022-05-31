@@ -232,6 +232,12 @@ h4 {
 }
 
 .slider-main__slide-bg-2 {
+	position: relative;
+	width: 100%;
+	padding: 160px 0 130px 0;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
 	background: url('../img/sl-main-02.jpg');
 }
 

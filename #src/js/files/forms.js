@@ -552,7 +552,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			let balanceOwed = (form.querySelectorAll("input[name=balance-owed]").length == 0) ? "" : form.querySelectorAll("input[name=balance-owed]")[0].value;
 			let interestRate = (form.querySelectorAll("input[name=interest-rate]").length == 0) ? "" : form.querySelectorAll("input[name=interest-rate]")[0].value;
 			let objectAddress = (form.querySelectorAll("input[name=object-address]").length == 0) ? "" : form.querySelectorAll("input[name=object-address]")[0].value;
-			let objectCharacteristics = (form.querySelectorAll("input[object-characteristics]").length == 0) ? "" : form.querySelectorAll("input[object-characteristics]")[0].value;
+			let objectCharacteristics = (form.querySelectorAll("input[name=object-characteristics]").length == 0) ? "" : form.querySelectorAll("input[name=object-characteristics]")[0].value;
 			let agreementNumber = (form.querySelectorAll("input[name=agreement-number]").length == 0) ? "" : form.querySelectorAll("input[name=agreement-number]")[0].value;
 			let startDateAgreement = (form.querySelectorAll("input[name=start-date-agreement]").length == 0) ? "" : form.querySelectorAll("input[name=start-date-agreement]")[0].value;
 			let tel = (form.querySelectorAll("input[name=phone]").length == 0) ? "" : form.querySelectorAll("input[name=phone]")[0].value;
