@@ -24,19 +24,9 @@ if (
                     </head>
                     <body>
                         <p>ФИО: '.$_REQUEST['name'].'</p>
-                        // <p>Дата рождения: '.$_REQUEST['date-birth'].'</p>
                         <p>Пол: '.$_REQUEST['gender'].'</p>
-                        // <p>Паспортные данные: '.$_REQUEST['passport'].'</p>
-                        // <p>Адрес по прописке: '.$_REQUEST['registered-address'].'</p>
-						// 						<p>Дата начала страхования: '.$_REQUEST['start-date'].'</p>
-						// 						<p>Дата окончания страхования: '.$_REQUEST['end-date'].'</p>
 												<p>Банк: '.$_REQUEST['bank'].'</p> 
 												<p>Остаток долга: '.$_REQUEST['balance-owed'].'</p> 
-												// <p>Процентная ставка: '.$_REQUEST['interest-rate'].'</p> 
-												// <p>Адрес обьекта страхования: '.$_REQUEST['object-address'].'</p> 
-												// <p>Харрактеристики обьекта: '.$_REQUEST['object-characteristics'].'</p> 
-												// <p>Номер кредитного договора: '.$_REQUEST['agreement-number'].'</p> 
-												// <p>Дата начала действия кредитного договора: '.$_REQUEST['start-date-agreement'].'</p> 
                         <p>Телефон: '.$_REQUEST['tel'].'</p> 
                         <p>e-mail: '.$_REQUEST['mail'].'</p>                                     
                     </body>
