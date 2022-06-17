@@ -706,6 +706,45 @@ h4 {
 	}
 }
 
+//========================================================================================================================================================
+
+.our-partners {
+	padding: 65px 0;
+}
+
+.slider-title {
+	justify-content: space-between;
+}
+
+.our-partners-sl {
+	padding: 10px;
+	margin: 0 -10px;
+}
+
+.our-partners-sl__slider-slide {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100px;
+	border-radius: 10px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+}
+
+.our-partners-sl__img {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 230px;
+	flex: 0 0 230px;
+	overflow: hidden;
+}
+
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<Адаптив>===========================================================================================================================================

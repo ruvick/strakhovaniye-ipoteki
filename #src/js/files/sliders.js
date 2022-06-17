@@ -125,143 +125,7 @@ let sliderBg = new Swiper('.slider-bg', {
 // function sliders_bild_callback(params) { }
 
 // Сюда пишем класс нашего слайдера и меняем переменную
-let licenses_sl = new Swiper('.licenses-sl', {
-  // effect: 'fade',
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
-
-  observer: true,
-  observeParents: true,
-  slidesPerView: 1.8,
-  spaceBetween: 15,
-  // autoHeight: true,
-  speed: 2000,
-  //touchRatio: 0,
-  //simulateTouch: false,
-  loop: true,
-  //preloadImages: false,
-  //lazy: true,
-  // Dotts
-  //pagination: {
-  //  el: '.slider-quality__pagging',
-  //  clickable: true,
-  //},
-  // Arrows
-  navigation: {
-    nextEl: '.licenses-sl-next',
-    prevEl: '.licenses-sl-prev',
-  },
-
-  breakpoints: {
-    360: {
-      slidesPerView: 2.5,
-      spaceBetween: 10,
-    },
-    540: {
-      slidesPerView: 3.5,
-      spaceBetween: 15,
-    },
-    768: {
-      slidesPerView: 3.8,
-    },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 10,
-    },
-    1100: {
-      spaceBetween: 20,
-    },
-    1280: {
-      slidesPerView: 5,
-      spaceBetween: 23,
-    },
-  },
-
-  on: {
-    lazyImageReady: function () {
-      ibg();
-    },
-  }
-  // And if we need scrollbar
-  //scrollbar: {
-  //  el: '.swiper-scrollbar',
-  //},
-});
-
-// function sliders_bild_callback(params) { }
-
-// Сюда пишем класс нашего слайдера и меняем переменную
-let reviews_sl = new Swiper('.reviews-sl', {
-  // effect: 'fade',
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
-
-  observer: true,
-  observeParents: true,
-  slidesPerView: 1.8,
-  spaceBetween: 15,
-  // autoHeight: true,
-  speed: 2000,
-  //touchRatio: 0,
-  //simulateTouch: false,
-  loop: true,
-  //preloadImages: false,
-  //lazy: true,
-  // Dotts
-  //pagination: {
-  //  el: '.slider-quality__pagging',
-  //  clickable: true,
-  //},
-  // Arrows
-  navigation: {
-    nextEl: '.reviews-sl-next',
-    prevEl: '.reviews-sl-prev',
-  },
-
-  breakpoints: {
-    360: {
-      slidesPerView: 2.5,
-      spaceBetween: 10,
-    },
-    540: {
-      slidesPerView: 3.5,
-      spaceBetween: 15,
-    },
-    768: {
-      slidesPerView: 3.8,
-    },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 10,
-    },
-    1100: {
-      spaceBetween: 20,
-    },
-    1280: {
-      slidesPerView: 6,
-      spaceBetween: 23,
-    },
-  },
-
-  on: {
-    lazyImageReady: function () {
-      ibg();
-    },
-  }
-  // And if we need scrollbar
-  //scrollbar: {
-  //  el: '.swiper-scrollbar',
-  //},
-});
-
-// function sliders_bild_callback(params) { }
-
-// Сюда пишем класс нашего слайдера и меняем переменную
-let clients_sl = new Swiper('.clients-sl', {
+let clients_sl = new Swiper('.our-partners-sl', {
   // effect: 'fade',
   // autoplay: {
   //   delay: 3000,
@@ -292,10 +156,10 @@ let clients_sl = new Swiper('.clients-sl', {
 
   breakpoints: {
     360: {
-      slidesPerView: 1.8,
+      slidesPerView: 1.3,
     },
     540: {
-      slidesPerView: 2.2,
+      slidesPerView: 1.5,
     },
     768: {
       slidesPerView: 2.5,
