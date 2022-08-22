@@ -50,7 +50,7 @@ let path = {
 	watch: {
 		html: src_folder + "/**/*.html",
 		js: src_folder + "/**/*.js",
-		css: src_folder + "/scss/**/*.scss",
+		css: src_folder + "/scss/**/*.{scss,css}",
 		images: src_folder + "/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}",
 		json: src_folder + "/json/**/*.*"
 	},
