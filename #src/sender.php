@@ -15,7 +15,7 @@ if (
     }
 
 
-    $to = 'rudikov-web@yandex.ru,ipoteka-strah@yandex.ru,osago.inbox@yandex.ru'; 
+    $to = 'ipoteka-strah@yandex.ru,osago.inbox@yandex.ru'; 
     $subject = 'Обращение с сайта ИПОТЕЧНОЕ СТРАХОВАНИЕ';
     $message = '
                 <html>
