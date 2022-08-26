@@ -15,7 +15,7 @@ if (
     }
 
 
-    $to = 'ipoteka-strah@yandex.ru,osago.inbox@yandex.ru'; 
+    $to = 'ipoteka-strah@yandex.ru,osago.inbox@yandex.ru,asmi046@gmail.com'; 
     $subject = 'Обращение с сайта ИПОТЕЧНОЕ СТРАХОВАНИЕ';
     $message = '
                 <html>
@@ -26,6 +26,7 @@ if (
                         <p>ФИО: '.$_REQUEST['name'].'</p>
                         <p>Телефон: '.$_REQUEST['tel'].'</p> 
                         <p>e-mail: '.$_REQUEST['mail'].'</p>                                     
+                        <p>Сообщение: '.$_REQUEST['msg'].'</p>                                     
                     </body>
                 </html>'; 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
